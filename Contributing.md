@@ -1,8 +1,36 @@
-# Contributing Guidelines
+# Welcome to Vruh-Board Contributing Guide 
 
-This document contains certain rules and guidelines that developers are expected to follow, while contributing to any repository by DSC-IEM.
+When contributing to this repository, please first discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. 
 
----
+Please note we have a [Code of Conduct](CodeofConduct.md), please follow it in all your interactions with the project.
+## New contributor guide
+
+To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:
+
+- [Finding ways to contribute to open source on GitHub](https://docs.github.com/en/get-started/exploring-projects-on-github/finding-ways-to-contribute-to-open-source-on-github)
+- [Set up Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
+- [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests)
+
+### Make changes locally
+
+1. [Install Git LFS](https://docs.github.com/en/github/managing-large-files/versioning-large-files/installing-git-large-file-storage).
+
+2. Fork the repository.
+- Using GitHub Desktop:
+  - [Getting started with GitHub Desktop](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/getting-started-with-github-desktop) will guide you through setting up Desktop.
+  - Once Desktop is set up, you can use it to [fork the repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/cloning-and-forking-repositories-from-github-desktop)!
+
+- Using the command line:
+  - [Fork the repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) so that you can make your changes without affecting the original project until you're ready to merge them.
+
+- GitHub Codespaces:
+  - [Fork, edit, and preview](https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/creating-a-codespace) using [GitHub Codespaces](https://github.com/features/codespaces) without having to install and run the project locally.
+
+3. Install or update to **Node.js v16**.
+
+4. Create a working branch and start with your changes!<br>
 
 ## 1. Commit Messages
 
@@ -31,9 +59,21 @@ This document contains certain rules and guidelines that developers are expected
   - All changes done, ready for production :))
 
 - Before opening a PR, make sure you squash all your commits into one single commit using `git rebase` (squash). Instead of having 50 commits that describe 1 feature implementation, there must be one commit that describes everything that has been done so far. You can read up about it [here](https://www.internalpointers.com/post/squash-commits-into-one-git).
-  > NOTE: While squashing your commits to write a new one, do not make use of `-m` flag. In this case, a vim editor window shall open. Write a title for the commit within 50-70 characters, leave a line and add an understandable description.
+  > NOTE: While squashing your commits to write a new one, do not make use of `-m` flag. In this case, a vim editor window shall open. Write a title for the commit within 50-70 characters, leave a line and add an understandable description.<br>
+ 
+  Commit the changes once you are happy with them. See [Atom's contributing guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md#git-commit-messages) to know how to use emoji for commit messages.Once your changes are ready, don't forget to self review to speed up the review process:zap:.
 
 ## 2. Issues
+
+
+#### Create a new issue
+
+If you spot a problem with the docs, [search if an issue already exists](https://docs.github.com/en/github/searching-for-information-on-github/searching-on-github/searching-issues-and-pull-requests#search-by-the-title-body-or-comments). If a related issue doesn't exist, you can open a new issue using a relevant [issue form](https://github.com/github/docs/issues/new/choose). 
+
+#### Solve an issue
+
+Scan through our [existing issues](https://github.com/github/docs/issues) to find one that interests you. You can narrow down the search using `labels` as filters.
+
 
 - Issues **MUST** be opened any time any of the following events occur:
   1. You want feature enhancements.
@@ -61,7 +101,20 @@ This document contains certain rules and guidelines that developers are expected
   - zeyan-testing
   - attemptToFixAuth
   - SomethingRandom
+1. Ensure any install or build dependencies are removed before the end of the layer when doing a 
+   build.
+2. Update the README.md with details of changes to the interface, this includes new environment 
+   variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the README.md to the new version that this
+   Pull Request would represent.
+<br>
+<br>
+### Your PR is merged!
 
+Congratulations :tada::tada: The [Vruh Board](README.md) team thanks you :sparkles:. 
+
+Once your PR is merged, your contributions will be publicly visible on the [Vruh Board repository](https://github.com/dsc-iem/VruhBoard). <br>
+<br>
 ## 4. Discussion Ethics
 
 - Developers should be clear and concise while commenting on issues or PR reviews. If needed, one should provide visual reference or a code snippet for everyone involved to properly grasp the context.
